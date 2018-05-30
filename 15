@@ -1,0 +1,13 @@
+function coinFlip(){
+var x = prompt("How many times do you want to flip the coin?")
+var heads = 0
+var tails = 0
+
+for (var i = 0; i < x; i++){
+var prod = Math.floor(Math.random() * 2);
+if (prod == 0){heads++;}
+else(tails++)}
+console.log('Heads: ', heads);
+console.log('Tails: ', tails);
+}
+coinFlip();
