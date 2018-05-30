@@ -1,0 +1,12 @@
+function computeFactorialOfN(n) {
+  var factorial = 1;
+  for(i=1;i<=n;i++){
+    factorial = factorial*i;
+  }
+  return(factorial); 
+}
+var output = computeFactorialOfN(3);
+console.log(output); // --> 6
+
+var output = computeFactorialOfN(4);
+console.log(output); // --> 24
