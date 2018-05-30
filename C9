@@ -1,0 +1,28 @@
+function convertScoreToGradeWithPlusAndMinus(score) {
+  var grade = "";
+  if (score > 89){
+    grade ="A";
+  }
+  else if (score <= 89 && score > 79){
+    grade = ("B");
+  }
+  else if (score <= 79&& score >69){
+    grade = ("C");
+  }
+  else if (score <= 69 && score >59){
+    grade = ("D");
+  }
+  else if (score < 59 && score >= 0){
+    grade = ("F");
+  }
+  else if (score < 0 || score > 100){
+    return ("INVALID SCORE");
+  }
+  
+  if (score%10 <= 2){
+    grade+="-";
+  }
+  else if (score%10 >= 8){
+    grade+="+";
+  }
+  return grade;
